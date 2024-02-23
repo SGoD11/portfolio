@@ -26,12 +26,17 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz1usL4NAQbMLhUudZ4s3
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    var submitBtn = document.getElementById("submitBtn");
+    submitBtn.innerText = "Submitting wait";
+    submitBtn.style.backgroundColor = "green";
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         success_msg.innerHTML = "Message sent successfully"
         setTimeout(function(){
             success_msg.innerHTML=""
         }, 2000)
+        submitBtn.innerText = "Submit";
+        submitBtn.style.backgroundColor = "red";
         form.reset()
       })
       .catch(error => console.error('Error!', error.message));
