@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c274a2dc34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/Logo.png" class="logo" alt="image not found">
+                <ul id="slidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Dev. & UI/UX Designer</p>
+                <h1>Hi, I'm <span>Subhajit Dhar</span><br>A Fullstack Web Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about-sectoin -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur provident, architecto, neque
+                        aperiam eligendi nemo laborum quos fugit soluta minus ad excepturi dolor molestias maiores rem
+                        nam nobis maxime saepe commodi animi ducimus. Doloribus repellendus explicabo sapiente facilis
+                        blanditiis dolorem ullam sunt. Et ex dolore mollitia fuga aspernatur molestias odit?</P>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Designing Apps Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Designing Apps Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Designing Apps Interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio cupiditate incidunt
+                        enim facilis quo accusamus, nemo, aspernatur reiciendis repellendus veritatis beatae similique
+                        fugiat eveniet et omnis non eligendi ipsum quidem impedit molestiae?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-ungroup"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio cupiditate incidunt
+                        enim facilis quo accusamus, nemo, aspernatur reiciendis repellendus veritatis beatae similique
+                        fugiat eveniet et omnis non eligendi ipsum quidem impedit molestiae?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto odio cupiditate incidunt
+                        enim facilis quo accusamus, nemo, aspernatur reiciendis repellendus veritatis beatae similique
+                        fugiat eveniet et omnis non eligendi ipsum quidem impedit molestiae?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="data:image/png;base64,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" alt="work-1">
+                    <div class="layer discord">
+                        <h3>Discord Clone</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur vero, neque,
+                            exercitationem dignissimos ut nihil non ipsum esse nobis tenetur alias doloremque debitis
+                            atque recusandae.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQKCG8w7wVznj9sHhrHge3cKYVuUblDUuOaUp_psQ=s900-c-k-c0x00ffffff-no-rj" alt="work-2">
+                    <div class="layer netflix">
+                        <h3>Netflix Clone</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur vero, neque,
+                            exercitationem dignissimos ut nihil non ipsum esse nobis tenetur alias doloremque debitis
+                            atque recusandae.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://static.wixstatic.com/media/d2252d_4c1a1bda6a774bd68f789c0770fd16e5~mv2.png" alt="work-3">
+                    <div class="layer amazone">
+                        <h3>Amazone Clone</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur vero, neque,
+                            exercitationem dignissimos ut nihil non ipsum esse nobis tenetur alias doloremque debitis
+                            atque recusandae.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact files -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> subhajit13dhar@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9954461852</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/subhajit_dhar_sd/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/SubhajitDhar000"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/SGoD11"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/subhajit-dhar-108721247/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="public/resume.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your email" required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" style="margin-top: 4px;">Submit</button>
+                    </form>
+                    <span id="success"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> Copyright made and own by Subhajit Dhar<i class="fa-duotone fa-trademark"></i> </p>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
