@@ -34,5 +34,5 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz1usL4NAQbMLhUudZ4s3
         }, 2000)
         form.reset()
       })
-      .catch(error => console.error('Error!', error.message))
+      .catch(error => console.error('Error!', error.message));
   })
