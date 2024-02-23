@@ -194,15 +194,23 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: #fcb900;
+    color: yellowgreen;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
-.services-list div:hover {
+.services-list div:hover  {
     background-color: red;
     transform: translateY(-10px);
+    i{
+        color: yellowgreen;
+    }
+}
+
+
+.services-list div li{
+    color: #fcb900;
 }
 
 /* portfolio */
