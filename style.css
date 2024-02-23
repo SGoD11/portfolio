@@ -379,6 +379,14 @@ form btn2 {
 .copyright i {
     color: red;
 }
+.sub-text{
+    color: green;
+    margin-top: 12px;
+    font-weight: 100;
+    font-family: monospace;
+    text-wrap: wrap;
+    font-size: smaller;
+}
 
 /* css for small screen  */
 nav .fas{
