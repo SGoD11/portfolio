@@ -343,6 +343,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
     display: inline-block;
     background: red;
+    margin: 18px 0;
 }
 
 .contact-right form {
